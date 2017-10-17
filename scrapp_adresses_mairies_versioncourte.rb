@@ -18,6 +18,7 @@ def get_all_the_urls_of_val_doise_townhalls()
   @array_url_city = []
   @array_mail_city = []
   @array_name_city = []
+  @annuaire_95 = {}
 
   name_cities.each do |city|
       if city.class == Nokogiri::XML::Element               #unitile
@@ -28,22 +29,17 @@ def get_all_the_urls_of_val_doise_townhalls()
         @array_name_city << name_city
         @array_url_city << url_city2
         @array_mail_city << mail_city
-        return @array_name_city, @array_url_city, @array_mail_city      #puts city.content==puts city.text
+       #puts city.content==puts city.text ?? old
       end
 
   end
-# url_city2 = "http://annuaire-des-mairies.com/" + url_city.text
-end
 
-def makeHashFromArray()
-  @annuaire_95 = {}
   i = 0
   @array_name_city.each do |key|
      @annuaire_95["#{key}"]= @array_mail_city[i]
      i += 1
    end
-   return annuaire_95
+   @annuaire_95
 end
 
 get_all_the_urls_of_val_doise_townhalls
-pp makeHashFromArray()
