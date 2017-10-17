@@ -28,6 +28,7 @@ GEM
       os (~> 0.9)
       signet (~> 0.7)
     httpclient (2.8.3)
+    json (2.1.0)
     jwt (1.5.6)
     little-plugger (1.1.4)
     logging (2.2.2)
@@ -43,6 +44,7 @@ GEM
     multipart-post (2.0.0)
     nokogiri (1.8.1)
       mini_portile2 (~> 2.3.0)
+    open_uri_redirections (0.2.1)
     os (0.9.6)
     pry (0.11.1)
       coderay (~> 1.1.0)
@@ -64,7 +66,11 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  bundler!
   google_drive!
+  json!
+  nokogiri!
+  open_uri_redirections (~> 0.2.1)!
   pry!
 
 BUNDLED WITH

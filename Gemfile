@@ -4,5 +4,6 @@ source 'https://rubygems.org' do
   gem 'pry'
   gem 'json'
   gem 'nokogiri'
-  gem 'open-uri'
+  gem 'open_uri_redirections', '~> 0.2.1'
+  gem 'bundler'
 end

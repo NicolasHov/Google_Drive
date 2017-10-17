@@ -23,4 +23,3 @@ worksheet[2, 1] = "Updated!"
 worksheet.save
 
 # Print out the first 6 columns of each row
-worksheet.rows.each { |row| puts row.first(7).join(" | ") }
